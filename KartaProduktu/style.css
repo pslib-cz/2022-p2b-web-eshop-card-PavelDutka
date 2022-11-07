@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhRTM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/nunito/v24/XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmRTM.ttf) format('truetype');
+}
+body {
+  color: #645c55;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+a {
+  outline: 0;
+  color: #8a6d50;
+  text-decoration: none;
+}
+
+.page-container {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1440px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.button-primary {
+  display: inline-block;
+  padding: 0.3em 1em;
+  color: #8a6d50;
+  border: 1px solid #BFADA3;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-primary:hover {
+  color: white;
+  background-color: #BFADA3;
+  text-decoration: none;
+}
+.ware-list--cols-3 .ware-list__item {
+  width: calc(33.3% - 2 * 10px);
+}
+.ware-list--cols-4 .ware-list__item {
+  width: calc(25% - 2 * 10px);
+}
+
+.ware-list__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ware-list__item {
+  position: relative;
+  padding: 25px;
+  margin: 10px;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  background-color: white;
+  text-align: center;
+}
+.ware-list__item:hover {
+  box-shadow: 0 0 20px #ececec;
+}
+.ware-list__item:hover .ware-list__item__name {
+  font-weight: bold;
+}
+.ware-list__item:hover a {
+  text-decoration: none;
+}
+.ware-list__item__name {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ececec;
+  padding-bottom: 15px;
+  font-size: 1.1em;
+  color: #504746;
+}
+.ware-list__item__photo {
+  max-width: 100%;
+}
+.ware-list__item__price {
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.ware-list__item__button {
+  margin: 10px;
+}
